@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Emoji Roulette</title>
+
+    <link rel="icon" type="image/png" href="http://emojipedia-us.s3.amazonaws.com/cache/f8/69/f869f6512b0d7187f4e475fc9aa7f250.png">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+<!---SIDEBAR--->
+
+<div class="container col-md-3 col-sm-4 col-xs-5" id="grey">
+  <div class="btn-group btn-group-justified" role="group" id="toggler">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default active" id="setup"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default" id="spins"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></button>
+    </div>
+</div>
+
+
+<!---EMOJI DROPDOWNS--->
+
+<!---DROPDOWN 1--->
+<div class="all-dropdowns">
+<h5>Select Emojis</h5>
+<div class="btn-group btn_grp" id="first-dropdown">
+  <button type="button" class="btn btn-default center_text" id="dropdown_1">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_1" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_1" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_1" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_1" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_1" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_1" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_1" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_1" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_1" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_1" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_1" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_1" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_1" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_1" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_1" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_1" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_1" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_1" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_1" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_1" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_1" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_1" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_1" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_1" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_1" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+</div>
+
+<!---DROPDOWN 2--->
+
+<div class="btn-group btn_grp">
+  <button type="button" class="btn btn-default center_text" id="dropdown_2">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_2" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_2" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_2" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_2" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_2" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_2" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_2" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_2" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_2" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_2" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_2" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_2" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_2" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_2" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_2" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_2" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_2" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_2" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_2" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_2" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_2" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_2" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_2" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_2" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_2" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+</div>
+
+<!---DROPDOWN 3--->
+
+<div class="btn-group btn_grp">
+  <button type="button" class="btn btn-default center_text" id="dropdown_3">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_3" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_3" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_3" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_3" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_3" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_3" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_3" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_3" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_3" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_3" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_3" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_3" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_3" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_3" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_3" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_3" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_3" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_3" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_3" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_3" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_3" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_3" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_3" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_3" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_3" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+</div>
+
+<!---DROPDOWN 4--->
+
+<div class="btn-group btn_grp">
+  <button type="button" class="btn btn-default center_text" id="dropdown_4">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_4" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_4" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_4" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_4" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_4" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_4" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_4" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_4" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_4" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_4" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_4" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_4" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_4" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_4" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_4" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_4" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_4" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_4" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_4" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_4" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_4" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_4" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_4" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_4" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_4" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+</div>
+
+<!---DROPDOWN 5--->
+
+<div class="btn-group btn_grp dropup">
+  <button type="button" class="btn btn-default center_text" id="dropdown_5">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_5" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_5" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_5" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_5" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_5" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_5" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_5" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_5" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_5" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_5" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_5" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_5" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_5" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_5" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_5" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_5" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_5" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_5" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_5" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_5" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_5" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_5" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_5" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_5" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_5" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+</div>
+
+<!--DROPDOWN 6-->
+
+<div class="btn-group btn_grp dropup">
+  <button type="button" class="btn btn-default center_text" id="dropdown_6">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_6" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_6" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_6" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_6" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_6" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_6" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_6" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_6" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_6" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_6" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_6" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_6" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_6" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_6" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_6" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_6" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_6" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_6" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_6" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_6" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_6" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_6" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_6" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_6" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_6" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+</div>
+
+<!--DROPDOWN 7-->
+
+<div class="btn-group btn_grp dropup">
+  <button type="button" class="btn btn-default center_text" id="dropdown_7">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_7" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_7" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_7" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_7" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_7" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_7" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_7" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_7" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_7" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_7" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_7" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_7" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_7" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_7" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_7" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_7" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_7" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_7" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_7" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_7" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_7" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_7" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_7" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_7" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_7" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+</div>
+
+<!---DROPDOWN 8--->
+
+
+<div class="btn-group btn_grp dropup" style="padding-bottom: 1.5em; border-bottom:1px solid gray;">
+  <button type="button" class="btn btn-default center_text" id="dropdown_8">Emoji Me</button>
+  <button type="button" class="btn btn-default dropdown-toggle toggle_width" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <span class="emoji_8" id="&#x1f483;" data-description="Dancer">💃</span>
+      <span class="emoji_8" id="&#x1f3a4;" data-description="Open Mic">🎤</span>
+      <span class="emoji_8" id="&#x1f3ad;" data-description="Masks">🎭</span>
+      <span class="emoji_8" id="&#x1f4f8;" data-description="Snapstagram It">📸</span>
+      <span class="emoji_8" id="&#x1f4dd;" data-description="Doodle">📝</span>
+    </li>
+    <li>
+      <span class="emoji_8" id="&#x1f455;" data-description="Polo Shirt">👕</span>
+      <span class="emoji_8" id="&#x1f456;" data-description="Pants">👖</span>
+      <span class="emoji_8" id="&#x1f414;" data-description="Chicken (Cluck)">🐔</span>
+      <span class="emoji_8" id="&#x1f42e;" data-description="Cow (Moo)">🐮</span>
+      <span class="emoji_8" id="&#x1f437;" data-description="Pig (Oink)">🐷</span>
+    </li>
+    <li>
+      <span class="emoji_8" id="&#x1f355;" data-description="Pizza">🍕</span>
+      <span class="emoji_8" id="&#x1f354;" data-description="Cheeseburger">🍔</span>
+      <span class="emoji_8" id="&#x1f32e;" data-description="Taco">🌮</span>
+      <span class="emoji_8" id="&#x1f363;" data-description="Sushi">🍣</span>
+      <span class="emoji_8" id="&#x1f377;" data-description="Wine">🍷</span>
+    </li>
+    <li>
+      <span class="emoji_8" id="&#x1f37a;" data-description="Beer">🍺</span>
+      <span class="emoji_8" id="&#x1f37b;" data-description="Cheers!">🍻</span>
+      <span class="emoji_8" id="&#x1f35e;" data-description="Toast">🍞</span>
+      <span class="emoji_8" id="&#x1f52b;" data-description="Gun It">🔫</span>
+      <span class="emoji_8" id="&#x1f48c;" data-description="Love Letter">💌</span>
+    </li>
+    <li>
+      <span class="emoji_8" id="&#x1f467;" data-description="Girl">👧</span>
+      <span class="emoji_8" id="&#x1f466;" data-description="Boy">👦</span>
+      <span class="emoji_8" id="&#x1f511;" data-description="Major Key">🔑</span>
+      <span class="emoji_8" id="&#x1f48b;" data-description="Lips">💋</span>
+      <span class="emoji_8" id="&#x1f3cb;" data-description="Feat of Strength">🏋</span>
+    </li>
+  </ul>
+  </div>
+<div id="nav"></div>
+</div>
+<h5>Spin History</h5>
+<div id="spin-history"></div>
+</div>
+</div>
+
+<!---END EMOJI DROPDOWNS--->
+
+<!---ROULETTE WHEEL--->
+
+<div class="container col-md-9 col-sm-8 col-xs-7">
+<h1>Emoji Roulette</h1>
+    <div id="wheel">
+        <div id="inner-wheel">
+            <div class="sec"><span class="wedge" id="wedge_1"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_2"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_3"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_4"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_5"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_6"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_7"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_8"></span></div>
+        </div>
+
+        <div id="spin">
+            <div id="inner-spin"></div>
+        </div>
+</div>
+
+<!---SCRIPTS--->
+
+</body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>

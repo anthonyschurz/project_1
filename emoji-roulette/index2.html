@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Emoji Roulette</title>
+
+    <link rel="icon" type="image/png" href="http://emojipedia-us.s3.amazonaws.com/cache/f8/69/f869f6512b0d7187f4e475fc9aa7f250.png">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+<!---SIDEBAR--->
+
+<div class="container col-md-3 col-sm-4 col-xs-5" id="grey">
+  <div class="btn-group btn-group-justified" role="group" id="toggler">
+    <div class="btn-group" role="group">
+      <a href="index.html"><button type="button" class="btn btn-default">Setup</button></a>
+    </div>
+    <div class="btn-group" role="group">
+      <a href="index2.html"><button type="button" class="btn btn-default">Spins</button></a>
+    </div>
+</div>
+
+
+
+<div class="btn-group btn_grp">
+<div id="nav"></div>
+</div>
+</div>
+
+
+<!---ROULETTE WHEEL--->
+
+<div class="container col-md-9 col-sm-8 col-xs-7">
+<h1>Emoji Roulette</h1>
+    <div id="wheel">
+        <div id="inner-wheel">
+            <div class="sec"><span class="wedge" id="wedge_1"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_2"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_3"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_4"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_5"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_6"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_7"></span></div>
+            <div class="sec"><span class="wedge" id="wedge_8"></span></div>
+        </div>
+
+        <div id="spin">
+            <div id="inner-spin"></div>
+        </div>
+</div>
+
+<!---SCRIPTS--->
+
+</body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>
