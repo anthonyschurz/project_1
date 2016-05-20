@@ -106,7 +106,7 @@ $(".emoji_8").click( function(event){
 			if (extraDegree > wedge7CoorA && extraDegree < wedge7CoorB) {
 				console.log($('#wedge_7').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_7').html() + ', ');
+					$("#spin-history").append($('#wedge_7').html() + " ");
           $("#wedge_7").addClass('animated bounceIn');
 				},6000)
 
@@ -134,7 +134,7 @@ $(".emoji_8").click( function(event){
 			else if (extraDegree > wedge6CoorA && extraDegree < wedge6CoorB) {
 				console.log($('#wedge_6').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_6').html() + ', ');
+					$("#spin-history").append($('#wedge_6').html() + " ");
           $("#wedge_6").addClass('animated bounceIn');
 				},6000)
 
@@ -162,7 +162,7 @@ $(".emoji_8").click( function(event){
 			else if (extraDegree > wedge5CoorA && extraDegree < wedge5CoorB) {
 				console.log($('#wedge_5').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_5').html() + ', ');
+					$("#spin-history").append($('#wedge_5').html() + " ");
           $("#wedge_5").addClass('animated bounceIn');
 				},6000)
 
@@ -190,7 +190,7 @@ $(".emoji_8").click( function(event){
 			else if (extraDegree > wedge4CoorA && extraDegree < wedge4CoorB) {
 				console.log($('#wedge_4').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_4').html() + ', ');
+					$("#spin-history").append($('#wedge_4').html() + " ");
           $("#wedge_4").addClass('animated bounceIn');
 				},6000)
 
@@ -218,7 +218,7 @@ $(".emoji_8").click( function(event){
 			else if (extraDegree > wedge3CoorA && extraDegree < wedge3CoorB) {
 				console.log($('#wedge_3').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_3').html() + ', ');
+					$("#spin-history").append($('#wedge_3').html() + " ");
           $("#wedge_3").addClass('animated bounceIn');
 				},6000)
 
@@ -246,7 +246,7 @@ $(".emoji_8").click( function(event){
 			else if (extraDegree > wedge2CoorA && extraDegree < wedge2CoorB) {
 				console.log($('#wedge_2').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_2').html() + ', ');
+					$("#spin-history").append($('#wedge_2').html() + " ");
           $("#wedge_2").addClass('animated bounceIn');
 				},6000)
 
@@ -274,7 +274,7 @@ $(".emoji_8").click( function(event){
 			else if (extraDegree > wedge1CoorA && extraDegree < wedge1CoorB) {
 				console.log($('#wedge_1').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_1').html() + ', ');
+					$("#spin-history").append($('#wedge_1').html() + " ");
           $("#wedge_1").addClass('animated bounceIn');
 				},6000)
 
@@ -302,7 +302,7 @@ $(".emoji_8").click( function(event){
 			else {
 				console.log($('#wedge_8').html());
 				setTimeout(function(){
-					$("#spin-history").append($('#wedge_8').html() + ', ');
+					$("#spin-history").append($('#wedge_8').html() + " ");
           $("#wedge_8").addClass('animated bounceIn');
 				},6000)
 
