@@ -77,6 +77,7 @@ $(".emoji_8").click( function(event){
 
 	/*WHEEL SPIN FUNCTION*/
 	$('#spin').click(function(){
+    $(".wedge").removeClass('animated bounceIn');
 		clicks ++;
 
 		var newDegree = degree*clicks;
@@ -106,56 +107,224 @@ $(".emoji_8").click( function(event){
 				console.log($('#wedge_7').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_7').html() + ', ');
+          $("#wedge_7").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeOut(3000);
+          $("#wedge_2").fadeOut(3000);
+          $("#wedge_3").fadeOut(3000);
+          $("#wedge_4").fadeOut(3000);
+          $("#wedge_5").fadeOut(3000);
+          $("#wedge_6").fadeOut(3000);
+          $("#wedge_8").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeIn(2000);
+          $("#wedge_2").fadeIn(2000);
+          $("#wedge_3").fadeIn(2000);
+          $("#wedge_4").fadeIn(2000);
+          $("#wedge_5").fadeIn(2000);
+          $("#wedge_6").fadeIn(2000);
+          $("#wedge_8").fadeIn(2000);
+        },8500)
 			}
 
 			else if (extraDegree > wedge6CoorA && extraDegree < wedge6CoorB) {
 				console.log($('#wedge_6').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_6').html() + ', ');
+          $("#wedge_6").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeOut(3000);
+          $("#wedge_2").fadeOut(3000);
+          $("#wedge_3").fadeOut(3000);
+          $("#wedge_4").fadeOut(3000);
+          $("#wedge_5").fadeOut(3000);
+          $("#wedge_7").fadeOut(3000);
+          $("#wedge_8").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeIn(2000);
+          $("#wedge_2").fadeIn(2000);
+          $("#wedge_3").fadeIn(2000);
+          $("#wedge_4").fadeIn(2000);
+          $("#wedge_5").fadeIn(2000);
+          $("#wedge_7").fadeIn(2000);
+          $("#wedge_8").fadeIn(2000);
+        },8500)
 			}
 
 			else if (extraDegree > wedge5CoorA && extraDegree < wedge5CoorB) {
 				console.log($('#wedge_5').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_5').html() + ', ');
+          $("#wedge_5").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeOut(3000);
+          $("#wedge_2").fadeOut(3000);
+          $("#wedge_3").fadeOut(3000);
+          $("#wedge_4").fadeOut(3000);
+          $("#wedge_6").fadeOut(3000);
+          $("#wedge_7").fadeOut(3000);
+          $("#wedge_8").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeIn(2000);
+          $("#wedge_2").fadeIn(2000);
+          $("#wedge_3").fadeIn(2000);
+          $("#wedge_4").fadeIn(2000);
+          $("#wedge_6").fadeIn(2000);
+          $("#wedge_7").fadeIn(2000);
+          $("#wedge_8").fadeIn(2000);
+        },8500)
 			}
 
 			else if (extraDegree > wedge4CoorA && extraDegree < wedge4CoorB) {
 				console.log($('#wedge_4').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_4').html() + ', ');
+          $("#wedge_4").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeOut(3000);
+          $("#wedge_2").fadeOut(3000);
+          $("#wedge_3").fadeOut(3000);
+          $("#wedge_5").fadeOut(3000);
+          $("#wedge_6").fadeOut(3000);
+          $("#wedge_7").fadeOut(3000);
+          $("#wedge_8").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeIn(2000);
+          $("#wedge_2").fadeIn(2000);
+          $("#wedge_3").fadeIn(2000);
+          $("#wedge_5").fadeIn(2000);
+          $("#wedge_6").fadeIn(2000);
+          $("#wedge_7").fadeIn(2000);
+          $("#wedge_8").fadeIn(2000);
+        },8500)
 			}
 
 			else if (extraDegree > wedge3CoorA && extraDegree < wedge3CoorB) {
 				console.log($('#wedge_3').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_3').html() + ', ');
+          $("#wedge_3").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeOut(3000);
+          $("#wedge_2").fadeOut(3000);
+          $("#wedge_4").fadeOut(3000);
+          $("#wedge_5").fadeOut(3000);
+          $("#wedge_6").fadeOut(3000);
+          $("#wedge_7").fadeOut(3000);
+          $("#wedge_8").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeIn(2000);
+          $("#wedge_2").fadeIn(2000);
+          $("#wedge_4").fadeIn(2000);
+          $("#wedge_5").fadeIn(2000);
+          $("#wedge_6").fadeIn(2000);
+          $("#wedge_7").fadeIn(2000);
+          $("#wedge_8").fadeIn(2000);
+        },8500)
 			}
 
 			else if (extraDegree > wedge2CoorA && extraDegree < wedge2CoorB) {
 				console.log($('#wedge_2').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_2').html() + ', ');
+          $("#wedge_2").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeOut(3000);
+          $("#wedge_3").fadeOut(3000);
+          $("#wedge_4").fadeOut(3000);
+          $("#wedge_5").fadeOut(3000);
+          $("#wedge_6").fadeOut(3000);
+          $("#wedge_7").fadeOut(3000);
+          $("#wedge_8").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeIn(2000);
+          $("#wedge_3").fadeIn(2000);
+          $("#wedge_4").fadeIn(2000);
+          $("#wedge_5").fadeIn(2000);
+          $("#wedge_6").fadeIn(2000);
+          $("#wedge_7").fadeIn(2000);
+          $("#wedge_8").fadeIn(2000);
+        },8500)
 			}
 
 			else if (extraDegree > wedge1CoorA && extraDegree < wedge1CoorB) {
 				console.log($('#wedge_1').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_1').html() + ', ');
+          $("#wedge_1").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_2").fadeOut(3000);
+          $("#wedge_3").fadeOut(3000);
+          $("#wedge_4").fadeOut(3000);
+          $("#wedge_5").fadeOut(3000);
+          $("#wedge_6").fadeOut(3000);
+          $("#wedge_7").fadeOut(3000);
+          $("#wedge_8").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_2").fadeIn(2000);
+          $("#wedge_3").fadeIn(2000);
+          $("#wedge_4").fadeIn(2000);
+          $("#wedge_5").fadeIn(2000);
+          $("#wedge_6").fadeIn(2000);
+          $("#wedge_7").fadeIn(2000);
+          $("#wedge_8").fadeIn(2000);
+        },8500)
 			}
 
 			else {
 				console.log($('#wedge_8').html());
 				setTimeout(function(){
 					$("#spin-history").append($('#wedge_8').html() + ', ');
+          $("#wedge_8").addClass('animated bounceIn');
 				},6000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeOut(3000);
+          $("#wedge_2").fadeOut(3000);
+          $("#wedge_3").fadeOut(3000);
+          $("#wedge_4").fadeOut(3000);
+          $("#wedge_5").fadeOut(3000);
+          $("#wedge_6").fadeOut(3000);
+          $("#wedge_7").fadeOut(3000);
+        },5000)
+
+        setTimeout(function(){
+          $("#wedge_1").fadeIn(2000);
+          $("#wedge_2").fadeIn(2000);
+          $("#wedge_3").fadeIn(2000);
+          $("#wedge_4").fadeIn(2000);
+          $("#wedge_5").fadeIn(2000);
+          $("#wedge_6").fadeIn(2000);
+          $("#wedge_7").fadeIn(2000);
+        },8500)
 			}
 			console.log(extraDegree);
 		}
