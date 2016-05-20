@@ -88,14 +88,14 @@ h1:hover {
 }
 
 
-#first-dropdown {
-  padding-top: .5em;
-}
-
-
 .btn_grp {
   width:100%;
   margin: 1em 0 0 0;
+}
+
+#first-dropdown {
+  padding-top: .5em;
+	margin: 0;
 }
 
 
